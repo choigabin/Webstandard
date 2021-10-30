@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS 폰트속성</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"> <!-- 구글폰트가져오기1 -->
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap'); /* 구글폰트가져오기2 */
+			
+			/* font-family : 글꼴지정속성 */
+			/* 1. sans-serif : 고딕체 */
+			.text01 { font-family: Arial, Helvetica, sans-serif; }
+		
+			/* 2. serif : 명조체 */
+			.text02 { font-family: 'Times New Roman', Times, serif; }
+		
+			/* 3. 한국어폰트 */
+			.text03 { font-family: '궁서체'; }
+
+			.text04 { font-family: 'Nanum Pen Script', cursive; }
+
+			.text05 { font-family: 'Gugi', cursive; }
+			
+			/* 4. 서버 폰트 : 우리 서버에 폰트를 올려서 쓰는 방식 */
+			@font-face {
+				font-family: 'aaa'; /* 원래 폰트명으로 써야 이해가 쉬움 */
+				src: url(fonts/NotoSansKR-Regular.woff);
+				font-weight: 400;
+			}
+			.text06	{ font-family: 'aaa'; }
+		</style>
+	</head>
+	<body>
+		<h1 class="text01">title tag</h1>
+		<h1 class="text02">title tag</h1>
+		<h1 class="text03">제목태그</h1>
+		<h1 class="text04">제목태그</h1>
+		<h1 class="text05">제목태그</h1>
+		<h1 class="text06">제목태그</h1>
+	</body>
+</html>
+
+
+
+
