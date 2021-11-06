@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>CSS배경속성</title>
+        <style>
+            div{
+                width: 500px; height: 170px;
+                border: 5px solid black;
+                margin-bottom: 20px;
+                background-image: url(images/shape.png);
+                background-repeat: no-repeat;
+            }
+
+            /* background-size : 배경이미지 크기 속성 */
+            /* background-size : x축크기 y축크기 */
+
+            /* 1. 수치 */
+            /* 1-1. px단위 - 절대적 크기 단위 */
+            /* 1-2. %단위 - 상대적으로 부모크기를 상속 */
+            .box01 { background-size: 100px 50px; }
+            .box02 { background-size: 100px; }  /* x축에 맞춘 후 비율 고정 */
+            .box03 { background-size: 100% 100%; }  /* x축에 맞춘 후 비율 고정 */
+            .box04 {
+                background-image: url(http://placehold.it/50x50);
+                background-size: calc(100% - 40px) calc(100% - 40px);
+                background-position: center;
+            }
+
+            /* 2. 키워드 */
+            /* 2-1. cover : x축과 y축에 큰쪽에 맞춰서 빈공간 없이 처리 */
+            .box05 { 
+                background-image: url(http://placehold.it/50x50);
+                background-size: cover;     
+
+            }
+            .box06 { 
+                background-image: url(http://placehold.it/50x50); 
+                background-size: contain;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box01"></div>
+        <div class="box02"></div>
+        <div class="box03"></div>
+        <div class="box04"></div>
+        <div class="box05"></div>
+        <div class="box06"></div>
+    </body>
+</html>

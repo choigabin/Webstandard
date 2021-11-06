@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>CSS배경속성</title>
+        <style>
+            *{ padding: 0; margin: 0; }
+            div{
+                width: 100%; height: 500px;
+                margin-bottom: 100px;
+            }
+            .test01 {
+                background-image: url(images/full_img.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 500px;
+            }
+            .test02 {
+                background-color: #1987c4;
+                text-align: center; /* 자식인 img 태그도 컨텐츠 -> align속성 적용 가능 */
+                background-image: url(images/main03_pattern03.png), url(images/main03_pattern02.png), url(images/main03_pattern01.png);
+                background-repeat: repeat-x, repeat-x, repeat;
+                background-position: left bottom, left top, center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="test01"></div>
+        <div class="test02">
+            <img src="images/main03_text.png" alt="">
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

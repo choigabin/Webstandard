@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>CSS배경속성</title>
+        <style>
+            *{ padding: 0; margin: 0; }
+            div{
+                width: 100%; height: 500px;
+                margin-bottom: 100px;
+                background-image: url(images/test_bg.gif);
+            }
+            .self {
+                background-image: url(images/test_img01.png), url(images/test_img02.png), url(images/test_img03.png), url(images/test_bg.gif);
+                background-repeat: no-repeat, no-repeat, no-repeat, repeat;
+                background-position: 0 100px, calc(100% - 300px) top, right bottom, left top;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="self"></div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

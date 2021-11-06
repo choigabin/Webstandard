@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>CSS배경속성</title>
+        <style>
+            div{
+                width: 500px; height: 170px;
+                border: 5px solid black;
+                margin-bottom: 20px;
+                background-image: url(images/shape.png);
+                background-repeat: no-repeat;
+            }
+            
+            /* background-position : 배경이미지 위치를 지정 */
+            /* backgroudn-position : x축위치 y축위치; */
+
+            /* 1. 영문키워드 */
+            /* 1-1 x축위치 : left, center, right */
+            /* 1-2 y축위치 : top, center, bottom */
+            .box01 { background-position : left top; }
+            .box02 { background-position : right bottom; }
+            .box03 { background-position : center; }
+
+            /* 2. 수치 */
+            /* 2-1. px단위 : 절대적 위치 지정 */
+            /* 2-2. %단위 : 상대적 위치 지정 - 부모크기에서 %만큼 이동 */
+            .box04 { background-position : 100px 20px; }
+            .box05 { background-position : 100% 50%; }
+
+            /* 3. calc() : 계산기함수 => 사칙연산 */
+            /* 우측하단에서 20px 떨어지게 */
+            .box06 { background-position : calc(100% - 20px) calc(100% - 20px); }
+        </style>
+    </head>
+    <body>
+        <div class="box01"></div>
+        <div class="box02"></div>
+        <div class="box03"></div>
+        <div class="box04"></div>
+        <div class="box05"></div>
+        <div class="box06"></div>
+    </body>
+</html>

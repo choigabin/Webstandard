@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS배경속성</title>
+    <style>
+        /* 그라디언트 : 2가지 이상의 색을 처리해서 입체적인 효과를 줌 */
+        /* colorzilla.com 에서 코드 가져와서 사용 */
+        div { 
+            width: 200px; height: 200px;
+            border: 3px solid black;
+        }
+        /* 1. 선형그라디언트 : liner-gradient() */
+        .box01 {
+            background: linear-gradient(to bottom, #cdeb8e 0%,#90b936 100%);
+        }
+
+        /* 2. 원형그라디언트 : radial-agradient() */
+        .box02 {
+            background: radial-gradient(ellipse at center, #cdeb8e 0%,#a5c956 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box01">선형그라디언트</div>
+    <div class="box02">원형그라디언트</div>
+</body>
+</html>
